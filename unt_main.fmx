@@ -44,7 +44,7 @@ object frm_main: Tfrm_main
     Size.Height = 592.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 2
     TabPosition = PlatformDefault
     Sizes = (
@@ -56,25 +56,219 @@ object frm_main: Tfrm_main
       CustomIcon = <
         item
         end>
-      IsSelected = False
-      Size.Width = 180.000000000000000000
-      Size.Height = 49.000000000000000000
-      Size.PlatformDefault = False
-      StyleLookup = ''
-      TabOrder = 0
-      Text = 'Valor da Hora'
-    end
-    object tbValorServico: TTabItem
-      CustomIcon = <
-        item
-        end>
       IsSelected = True
       Size.Width = 180.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
+      Text = 'Valor da Hora'
+      ExplicitSize.cx = 180.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ListBox1: TListBox
+        Align = Top
+        Margins.Top = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 231.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 231.000000000000000000
+        object ListBoxGroupHeader1: TListBoxGroupHeader
+          Size.Width = 360.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Quanto voc'#234' ganha (quer ganhar) por  m'#234's?'
+        end
+        object ListBoxItem1: TListBoxItem
+          Position.Y = 30.000000000000000000
+          TabOrder = 5
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            KeyboardType = NumbersAndPunctuation
+            ReturnKeyType = Done
+            TextSettings.HorzAlign = Center
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 340.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'R$2.500,00'
+          end
+        end
+        object ListBoxGroupHeader2: TListBoxGroupHeader
+          Position.Y = 74.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Quantas horas voc'#234' quer trabalhar (trabalha) por dia?'
+        end
+        object ListBoxItem2: TListBoxItem
+          Position.Y = 104.000000000000000000
+          TabOrder = 4
+          object Edit2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            KeyboardType = NumbersAndPunctuation
+            ReturnKeyType = Done
+            TextSettings.HorzAlign = Center
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 340.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = '8'
+          end
+        end
+        object ListBoxGroupHeader3: TListBoxGroupHeader
+          Position.Y = 148.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Quantos dias voc'#234' quer trabalhar (trabalha) por semana?'
+        end
+        object ListBoxItem3: TListBoxItem
+          Position.Y = 178.000000000000000000
+          TabOrder = 3
+          object Edit3: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            KeyboardType = NumbersAndPunctuation
+            ReturnKeyType = Done
+            TextSettings.HorzAlign = Center
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 340.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = '7'
+          end
+        end
+      end
+    end
+    object tbValorServico: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 180.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
       Text = 'Valor do Servi'#231'o'
+      ExplicitSize.cx = 180.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ListBox2: TListBox
+        Align = Top
+        Margins.Top = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 231.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 231.000000000000000000
+        object ListBoxGroupHeader4: TListBoxGroupHeader
+          Size.Width = 360.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Quanto voc'#234' ganha por hora?'
+        end
+        object ListBoxItem4: TListBoxItem
+          Position.Y = 30.000000000000000000
+          TabOrder = 5
+          object Edit4: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            KeyboardType = NumbersAndPunctuation
+            ReturnKeyType = Done
+            TextSettings.HorzAlign = Center
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 340.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'R$15,00'
+          end
+        end
+        object ListBoxGroupHeader5: TListBoxGroupHeader
+          Position.Y = 74.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Quantas horas ir'#225' trabalhar no projeto por dia?'
+        end
+        object ListBoxItem5: TListBoxItem
+          Position.Y = 104.000000000000000000
+          TabOrder = 4
+          object Edit5: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            KeyboardType = NumbersAndPunctuation
+            ReturnKeyType = Done
+            TextSettings.HorzAlign = Center
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 340.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = '8'
+          end
+        end
+        object ListBoxGroupHeader6: TListBoxGroupHeader
+          Position.Y = 148.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Quantos dias ir'#225' durar o projeto?'
+        end
+        object ListBoxItem6: TListBoxItem
+          Position.Y = 178.000000000000000000
+          TabOrder = 3
+          object Edit6: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            KeyboardType = NumbersAndPunctuation
+            ReturnKeyType = Done
+            TextSettings.HorzAlign = Center
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 340.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = '7'
+          end
+        end
+      end
     end
   end
 end
